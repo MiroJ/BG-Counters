@@ -7,6 +7,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (divNppr) {
         divNppr.innerHTML = amountNrrp.toLocaleString();
     }
+    const divGreenHighway = document.getElementById('amount-green-highway');
+    if (divGreenHighway) {
+        divGreenHighway.innerHTML = Math.round(amountNrrp / 30000).toLocaleString();
+    }
 
     setInterval(() => {
         const annualAmount = calculateAnnualAmount();
