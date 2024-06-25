@@ -22,6 +22,7 @@
 .hover-text .tooltip-text {
     visibility: hidden;
     width: fit-content;
+    max-width: 300px;
     background-color: #42633f;
     color: #fff;
     text-align: center;
