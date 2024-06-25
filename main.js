@@ -2,6 +2,7 @@ const startDate = new Date('2023-01-01');
 const amountPerDay = 9.145 * 53200 * 1.83; // leva per day
 const amountPerSecond = amountPerDay / (24 * 60 * 60); // leva per second
 const amountNrrp = 1_300_000_000;
+const bgPopulation = 6_519_789;
 
 document.addEventListener('DOMContentLoaded', () => {
     // Set the amount of NRRP
@@ -22,10 +23,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const pensioners = Math.round((amountPerDay * 365) / 500000);
         divBotasPensioners.innerHTML = pensioners.toLocaleString();
     }
+    // Set amount for pensioners
     const divNrrpPensioners = document.getElementById('nnrp-pensioners');
     if (divNrrpPensioners) {
         const pensioners = Math.round(amountNrrp / 2100000);
         divNrrpPensioners.innerHTML = pensioners.toLocaleString();
+    }
+    // Set amount per capita
+    const divNrrpPerCapita = document.getElementById('nrrp-per-capita');
+    if (divNrrpPerCapita) {
+        const perNnrpCapita = Math.round(amountNrrp * 100 / bgPopulation) / 100;
+        divNrrpPerCapita.innerHTML = perNnrpCapita.toLocaleString();
     }
 
     setInterval(() => {
@@ -47,6 +55,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (divSidewalks) {
             const sidewalks = Math.round(currentBotasAmount / 37);
             divSidewalks.innerHTML = sidewalks.toLocaleString();
+        }
+        // Set the amount per capita
+        const divPerCapita = document.getElementById('botas-per-capita');
+        if (divPerCapita) {
+            const perCapita = Math.round(currentBotasAmount * 100 / bgPopulation) / 100;
+            divPerCapita.innerHTML = perCapita.toLocaleString();
         }
     }, 200);
 
