@@ -42,6 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const medicationUnits = calculateMedicationUnits(currentBotasAmount);
             divMedication.innerHTML = medicationUnits.toLocaleString();
         }
+        // Set the amount of sidewalks
+        const divSidewalks = document.getElementById('botas-sidewalks');
+        if (divSidewalks) {
+            const sidewalks = Math.round(currentBotasAmount / 37);
+            divSidewalks.innerHTML = sidewalks.toLocaleString();
+        }
     }, 200);
 
     const calculateBotasAmounts = () => {
