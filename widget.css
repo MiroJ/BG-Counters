@@ -1,0 +1,50 @@
+.counter {
+    color: #fff;
+    background-color: #212529;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    border-radius: 5px;
+    padding: 15px 15px 10px;
+    box-shadow: 4px 4px 10px #888;
+    min-width: 250px;
+    border-bottom: solid 10px #4caf50;
+}
+
+.sub-title {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.hover-text {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-text .tooltip-text {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    visibility: hidden;
+    width: fit-content;
+    max-width: 300px;
+    background-color: #2d682f;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px #888;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.hover-text:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}

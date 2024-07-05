@@ -11,50 +11,12 @@
             font-weight: bold;
             font-family: 'Courier New', Courier, monospace;
             text-align: right;
+            text-decoration: none;
             border-radius: 5px;
             padding: 8px 10px 5px;
             min-width: 180px;
             border-bottom: solid 5px #4caf50;
         }
-
-        .hover-text {
-            position: relative;
-            display: inline-block;
-        }
-
-        .hover-text .tooltip-text {
-            visibility: hidden;
-            opacity: 0;
-            position: absolute;
-            top: -50px;
-            left: 0;
-            min-width: 180px;
-            font-size: 12px;
-            font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: 400;
-            text-align: left;
-            background-color: #2d682f;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-            box-shadow: 4px 4px 10px #888;
-            border-bottom: solid 5px #4caf50;
-            color: #fff;
-            padding: 5px 5px 5px 10px;
-            z-index: 1;
-            transition: opacity 1s, top 0.5s;
-        }
-
-            .hover-text:hover .tooltip-text {
-                top: 31px;
-                visibility: visible;
-                opacity: 1;
-            }
-
-            .hover-text .tooltip-text ul {
-                text-indent: -15px;
-                list-style-type: none;
-                padding-inline-start: 15px;
-            }
 
     </style>
     <script>
@@ -102,27 +64,10 @@
 
 <body>
     <div>
-        <div class="counter hover-text">
+        <a class="counter hover-text" href="https://miroj.github.io/BG-Counters/" target="_blank">
             <strong id="botas-total">-</strong>
             <span>лева</span>
-            <div class="tooltip-text">
-                Това е сумата, която България е платила до този момент по договора с "Боташ", подписан от кабинета на Румен Радев, посредством служебния министър Росен Христов. Това се равнява на:
-                <ul>
-                    <li>
-                        <strong id="botas-medication">-</strong>
-                        <span>безплатни лекарства за сърдечно-съдови заболявания</span>
-                    </li>
-                    <li>
-                        <strong id="botas-sidewalks">-</strong>
-                        <span>квадратни метра тротоари</span>
-                    </li>
-                    <li>
-                        <strong id="botas-pensioners">-</strong>
-                        <span>лева годишно за половин милион пенсионери на минимална пенсия</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        </a>
     </div>
 </body>
 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Widget examples</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css?v=0.3">
+</head>
+
+<body>
+    <div class="container" style="max-width: 960px;">
+        <h1 class="display-1 my-4">Примери за интегриране на брояч във ваш уебсайт</h1>
+        <div>
+            Ето няколко примера за това как можете да интегрирате брояча във вашия уебсайт. Такава интеграция позволява да получавате
+            нови версии на уиджета без да е необходимо да променяте вашия код след първоначалното включване.
+        </div>
+
+        <h2 class="display-6 mt-4">Малък размер</h2>
+        <div>
+            Ако искате да покажете само колко пари губи България, можете да използвате малкия брояч.
+            Тази версия позволява когато потребител кликне върху уиджета да бъде пренасочен към пълната страница с подробности
+            за сумите и източници на тази информация.
+        </div>
+        <div class="text-center my-5">
+            <iframe src="./widget-small.html" title="Колко пари губи България" style="border: none; height: 40px; width: 200px; overflow: hidden;"></iframe>
+        </div>
+        <div>
+            За да интегрирате този брояч във вашия уебсайт, трябва да включите следния код във вашия HTML:
+        </div>
+        <pre>
+            <code>
+                &lt;iframe
+                    src="https://miroj.github.io/BG-Counters/widget-small.html"
+                    title="Колко пари губи България"
+                    style="border: none; height: 40px; width: 200px; overflow: hidden;"
+                &gt;&lt;/iframe&gt;
+            </code>
+        </pre>
+        <div>
+            Настройките които са включени в интеграцията са:
+        </div>
+        <div class="ms-4">
+            <code>src</code> е линк към уиджета намиращ се на нашия уевсайт.<br>
+            <code>title</code> е заглавието, което търсачки като Google ще разбере какво сте включили във вашия уебсайт.<br>
+            <code>style</code> е форматиране на това как да изглежда уиджетът във вашия сайт.<br>
+        </div>
+
+        <div>
+            Препоръчително е да не ги променяте, за да запазите стила и функционалността на брояча.
+        </div>
+    </div>
+
+    <footer class="container" style="max-width: 960px;">
+        <div class="small mt-5 border-top">
+            Кодът включен в тази страница е публично достъпен и може да бъде използван от всеки, който желае да го включи в своя уебсайт.
+            Не носим никаква отговорност за вреди, причинени от използването на този код. Моля, преценете качеството на код и информацията
+            преди да го използвате.
+        </div>
+    </footer>
+</body>
+
+</html>
